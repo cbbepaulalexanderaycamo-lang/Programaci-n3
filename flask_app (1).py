@@ -2,4 +2,5 @@ from flask import Flask, render_template
 app = Flask(__name__)
 @app.route('/')
 def index():
-    return render_template('lista2.html', título='canciones')
+    lista=['La guitarra', 'Para no verte más', 'Balada para un gordo']
+    return render_template('lista3.html', título='canciones', musicas=lista)
